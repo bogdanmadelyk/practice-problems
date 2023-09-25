@@ -10,3 +10,9 @@ export const containsDuplicate = (nums: number[]): boolean => {
 	}
 	return false;
 };
+
+export const containsDuplicate2 = (nums: number[]): boolean => {
+	let map = new Map()
+	nums.forEach(item => map.set(item, true))
+	return map.size !== nums.length;
+};
