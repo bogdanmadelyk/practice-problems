@@ -10,4 +10,7 @@ describe('Contains Duplicate tests', () => {
 	test('false case', () => {
 		expect(containsDuplicate([1,2,3,4])).toBe(false)
 	})
+	test('empty array case', () => {
+		expect(containsDuplicate([])).toBe(false)
+	})
 })

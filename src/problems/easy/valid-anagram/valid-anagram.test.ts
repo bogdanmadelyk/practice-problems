@@ -7,4 +7,7 @@ describe('Valid Anagram tests', () => {
 	test('false case', () => {
 		expect(isAnagram('rat', 'cat')).toBe(false);
 	})
+	test('empty string case', () => {
+		expect(isAnagram('', 's')).toBe(false)
+	})
 });
