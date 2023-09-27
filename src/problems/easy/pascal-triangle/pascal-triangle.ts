@@ -1,3 +1,6 @@
+// Given an integer numRows, return the first numRows of Pascal's triangle.
+// In Pascal's triangle, each number is the sum of the two numbers.
+
 export const pascalTriangle = (numRows: number): number[][] => {
 	let result:number[][] = []
 	for(let i = 0; i < numRows; i++) {
