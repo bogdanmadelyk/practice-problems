@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for easy/pascal-triangle/pascal-triangle.ts</title>
+    <title>Code coverage report for easy/isomorphic-strings/isomorphic-strings.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">easy/pascal-triangle</a> pascal-triangle.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">easy/isomorphic-strings</a> isomorphic-strings.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">90.9% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>10/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>5/6</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">88.88% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>8/9</span>
             </div>
         
             
@@ -80,41 +80,44 @@
 <a name='L15'></a><a href='#L15'>15</a>
 <a name='L16'></a><a href='#L16'>16</a>
 <a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Given an integer numRows, return the first numRows of Pascal's triangle.
-// In Pascal's triangle, each number is the sum of the two numbers.
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Given two strings s and t, determine if they are isomorphic.
+// Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+// All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
 &nbsp;
-export const pascalTriangle = (numRows: number): number[][] =&gt; {
-	let result:number[][] = []
-	for(let i = 0; i &lt; numRows; i++) {
-		result.push([])
-		for (let j = 0; j &lt; i+1; j++) {
-			if(j === i || j === 0) {
-				result[i][j] = 1
-			}
-			else {
-				result[i][j] = result[i-1][j-1] + result[i-1][j]
-			}
-		}
+export const isIsomorphic = (s: string, t: string): boolean =&gt; {
+	<span class="missing-if-branch" title="if path not taken" >I</span>if(s.length !== t.length) {
+<span class="cstat-no" title="statement not covered" >		return false;</span>
 	}
-	return result
-};</pre></td></tr></table></pre>
+&nbsp;
+	let obj:Record&lt;string, string&gt; = {}
+	for (let i = 0; i &lt; s.length; i++) {
+		if(obj[s[i]] &amp;&amp; obj[s[i]] !== t[i] || !obj[s[i]] &amp;&amp; Object.values(obj).includes(t[i])) {
+			return false
+		}
+		obj[s[i]] = t[i]
+	}
+&nbsp;
+	return true
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

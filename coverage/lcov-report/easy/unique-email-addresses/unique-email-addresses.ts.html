@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for easy/pascal-triangle/pascal-triangle.ts</title>
+    <title>Code coverage report for easy/unique-email-addresses/unique-email-addresses.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">easy/pascal-triangle</a> pascal-triangle.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">easy/unique-email-addresses</a> unique-email-addresses.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -80,7 +80,14 @@
 <a name='L15'></a><a href='#L15'>15</a>
 <a name='L16'></a><a href='#L16'>16</a>
 <a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -88,33 +95,29 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Given an integer numRows, return the first numRows of Pascal's triangle.
-// In Pascal's triangle, each number is the sum of the two numbers.
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Every valid email consists of a local name and a domain name, separated by the '@' sign. Besides lowercase letters, the email may contain one or more '.' or '+'.
+// For example, in "alice@leetcode.com", "alice" is the local name, and "leetcode.com" is the domain name.
+// If you add periods '.' between some characters in the local name part of an email address, mail sent there will be forwarded to the same address without dots in the local name. Note that this rule does not apply to domain names.
+// For example, "alice.z@leetcode.com" and "alicez@leetcode.com" forward to the same email address.
+// If you add a plus '+' in the local name, everything after the first plus sign will be ignored. This allows certain emails to be filtered. Note that this rule does not apply to domain names.
+// For example, "m.y+name@email.com" will be forwarded to "my@email.com".
+// It is possible to use both of these rules at the same time.
+// Given an array of strings emails where we send one email to each emails[i], return the number of different addresses that actually receive mails.
 &nbsp;
-export const pascalTriangle = (numRows: number): number[][] =&gt; {
-	let result:number[][] = []
-	for(let i = 0; i &lt; numRows; i++) {
-		result.push([])
-		for (let j = 0; j &lt; i+1; j++) {
-			if(j === i || j === 0) {
-				result[i][j] = 1
-			}
-			else {
-				result[i][j] = result[i-1][j-1] + result[i-1][j]
-			}
-		}
+export const uniqueEmailAddresses = (emails: string[]): number =&gt; {
+	let map = new Map()
+	for(let i = 0; i &lt; emails.length; i++) {
+		let [localName, domainName] = emails[i].split('@')
+		localName = localName.split('+')[0].split('.').join('')
+		const fullName = localName + '@' + domainName
+		map.set(fullName, true)
 	}
-	return result
-};</pre></td></tr></table></pre>
+	return map.size;
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695899189961" clover="3.2.0">
-  <project timestamp="1695899189961" name="All files">
-    <metrics statements="94" coveredstatements="83" conditionals="21" coveredconditionals="20" methods="17" coveredmethods="14" elements="132" coveredelements="117" complexity="0" loc="94" ncloc="94" packages="12" files="12" classes="12"/>
+<coverage generated="1695900768421" clover="3.2.0">
+  <project timestamp="1695900768421" name="All files">
+    <metrics statements="103" coveredstatements="91" conditionals="27" coveredconditionals="25" methods="18" coveredmethods="15" elements="148" coveredelements="131" complexity="0" loc="103" ncloc="103" packages="13" files="13" classes="13"/>
     <package name="easy.concatenation-array">
       <metrics statements="10" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
       <file name="concatenation-array.ts" path="/Users/bogdan/Desktop/projects/active/practice-problems/src/problems/easy/concatenation-array/concatenation-array.ts">
@@ -45,6 +45,21 @@
         <line num="7" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="8" count="4" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="easy.isomorphic-strings">
+      <metrics statements="9" coveredstatements="8" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <file name="isomorphic-strings.ts" path="/Users/bogdan/Desktop/projects/active/practice-problems/src/problems/easy/isomorphic-strings/isomorphic-strings.ts">
+        <metrics statements="9" coveredstatements="8" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="0" falsecount="1"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="11" type="cond" truecount="5" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
       </file>
     </package>
     <package name="easy.length-of-last-word">
