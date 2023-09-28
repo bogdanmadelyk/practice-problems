@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for easy/concatenation-array/concatenation-array.ts</title>
+    <title>Code coverage report for easy/unique-email-addresses/unique-email-addresses.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">easy/concatenation-array</a> concatenation-array.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">easy/unique-email-addresses</a> unique-email-addresses.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">38.46% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/13</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/10</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -85,38 +85,38 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 &lt;= i &lt; n (0-indexed).
-// Specifically, ans is the concatenation of two nums arrays.
-// Return the array ans.
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Every valid email consists of a local name and a domain name, separated by the '@' sign. Besides lowercase letters, the email may contain one or more '.' or '+'.
+// For example, in "alice@leetcode.com", "alice" is the local name, and "leetcode.com" is the domain name.
+// If you add periods '.' between some characters in the local name part of an email address, mail sent there will be forwarded to the same address without dots in the local name. Note that this rule does not apply to domain names.
+// For example, "alice.z@leetcode.com" and "alicez@leetcode.com" forward to the same email address.
+// If you add a plus '+' in the local name, everything after the first plus sign will be ignored. This allows certain emails to be filtered. Note that this rule does not apply to domain names.
+// For example, "m.y+name@email.com" will be forwarded to "my@email.com".
+// It is possible to use both of these rules at the same time.
+// Given an array of strings emails where we send one email to each emails[i], return the number of different addresses that actually receive mails.
 &nbsp;
-export const getConcatenation = (nums: number[]): number[] =&gt; {
-	return [...nums, ...nums]
-};
-&nbsp;
-export const getConcatenation2 = <span class="fstat-no" title="function not covered" >(n</span>ums: number[]): number[] =&gt; {
-	let result = <span class="cstat-no" title="statement not covered" >[]</span>
-	let shift = <span class="cstat-no" title="statement not covered" >0</span>
-<span class="cstat-no" title="statement not covered" >	for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; nums.length * 2; i++) {</span>
-<span class="cstat-no" title="statement not covered" >		<span class="missing-if-branch" title="if path not taken" >I</span>if(i === nums.length) {</span>
-<span class="cstat-no" title="statement not covered" >			shift = nums.length</span>
-		}
-<span class="cstat-no" title="statement not covered" >		result.push(nums[i - shift])</span>
+export const uniqueEmailAddresses = (emails: string[]): number =&gt; {
+	let map = new Map()
+	for(let i = 0; i &lt; emails.length; i++) {
+		let [localName, domainName] = emails[i].split('@')
+		localName = localName.split('+')[0].split('.').join('')
+		const fullName = localName + '@' + domainName
+		map.set(fullName, true)
 	}
-<span class="cstat-no" title="statement not covered" >	return result</span>
+	return map.size;
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
