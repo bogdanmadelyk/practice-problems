@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for easy/concatenation-array/concatenation-array.ts</title>
+    <title>Code coverage report for easy/reverse-string/reverse-string.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">easy/concatenation-array</a> concatenation-array.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">easy/reverse-string</a> reverse-string.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">38.46% </span>
+                <span class="strong">70.58% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/13</span>
+                <span class='fraction'>12/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/10</span>
+                <span class='fraction'>9/12</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -79,44 +79,38 @@
 <a name='L14'></a><a href='#L14'>14</a>
 <a name='L15'></a><a href='#L15'>15</a>
 <a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a>
-<a name='L19'></a><a href='#L19'>19</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L17'></a><a href='#L17'>17</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 &lt;= i &lt; n (0-indexed).
-// Specifically, ans is the concatenation of two nums arrays.
-// Return the array ans.
-&nbsp;
-export const getConcatenation = (nums: number[]): number[] =&gt; {
-	return [...nums, ...nums]
-};
-&nbsp;
-export const getConcatenation2 = <span class="fstat-no" title="function not covered" >(n</span>ums: number[]): number[] =&gt; {
-	let result = <span class="cstat-no" title="statement not covered" >[]</span>
-	let shift = <span class="cstat-no" title="statement not covered" >0</span>
-<span class="cstat-no" title="statement not covered" >	for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; nums.length * 2; i++) {</span>
-<span class="cstat-no" title="statement not covered" >		<span class="missing-if-branch" title="if path not taken" >I</span>if(i === nums.length) {</span>
-<span class="cstat-no" title="statement not covered" >			shift = nums.length</span>
-		}
-<span class="cstat-no" title="statement not covered" >		result.push(nums[i - shift])</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const reverseString = (s: string[]):void =&gt; {
+	let start = 0, end = s.length - 1;
+	while (start &lt; end) {
+		let temp = s[start]
+		s[start] = s[end]
+		s[end] = temp
+		start++
+		end--
 	}
-<span class="cstat-no" title="statement not covered" >	return result</span>
+}
+&nbsp;
+export const reverseString2 = <span class="fstat-no" title="function not covered" >(s</span>: string[]):void =&gt; {
+	const copyS = <span class="cstat-no" title="statement not covered" >[...s];</span>
+<span class="cstat-no" title="statement not covered" >	for(let i = <span class="cstat-no" title="statement not covered" >s.length - 1,</span> j = <span class="cstat-no" title="statement not covered" >0;</span> i &gt;= 0; i--, j++) {</span>
+<span class="cstat-no" title="statement not covered" >		s[j] = copyS[i]</span>
+	}
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
