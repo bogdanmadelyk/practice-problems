@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1696175133795" clover="3.2.0">
-  <project timestamp="1696175133795" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="5" coveredelements="5" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
-    <file name="map.ts" path="/Users/bogdan/Desktop/projects/active/practice-problems/src/problems/easy/map/map.ts">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="3" type="stmt"/>
-      <line num="7" count="9" type="stmt"/>
-      <line num="9" count="3" type="stmt"/>
+<coverage generated="1696176167851" clover="3.2.0">
+  <project timestamp="1696176167851" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1" elements="8" coveredelements="8" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+    <file name="filter.ts" path="/Users/bogdan/Desktop/projects/active/practice-problems/src/problems/easy/filter/filter.ts">
+      <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="12" type="cond" truecount="1" falsecount="0"/>
+      <line num="14" count="7" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>
