@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1696236800126" clover="3.2.0">
-  <project timestamp="1696236800126" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="12" coveredelements="12" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
-    <file name="max-profit.ts" path="/Users/bogdan/Desktop/projects/active/practice-problems/src/problems/easy/max-profit/max-profit.ts">
-      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="7" count="2" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="11" type="cond" truecount="1" falsecount="0"/>
-      <line num="11" count="7" type="stmt"/>
-      <line num="13" count="11" type="cond" truecount="1" falsecount="0"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
+<coverage generated="1696239790157" clover="3.2.0">
+  <project timestamp="1696239790157" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="13" coveredelements="13" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+    <file name="merge-sorted-array.ts" path="/Users/bogdan/Desktop/projects/active/practice-problems/src/problems/easy/merge-sorted-array/merge-sorted-array.ts">
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>
