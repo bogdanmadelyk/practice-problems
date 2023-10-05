@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1696506162061" clover="3.2.0">
-  <project timestamp="1696506162061" name="All files">
-    <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1" elements="14" coveredelements="12" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
-    <file name="word-pattern.ts" path="/Users/bogdan/Desktop/projects/active/practice-problems/src/problems/easy/word-pattern/word-pattern.ts">
-      <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="3" type="stmt"/>
-      <line num="6" count="3" type="cond" truecount="0" falsecount="1"/>
-      <line num="7" count="0" type="stmt"/>
-      <line num="9" count="3" type="stmt"/>
-      <line num="10" count="12" type="stmt"/>
-      <line num="11" count="12" type="stmt"/>
-      <line num="13" count="3" type="stmt"/>
-      <line num="14" count="7" type="cond" truecount="1" falsecount="0"/>
-      <line num="15" count="2" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
+<coverage generated="1696506826501" clover="3.2.0">
+  <project timestamp="1696506826501" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="12" coveredelements="12" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+    <file name="hash-set.ts" path="/Users/bogdan/Desktop/projects/active/practice-problems/src/problems/easy/hash-set/hash-set.ts">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="24" count="2" type="cond" truecount="2" falsecount="0"/>
     </file>
   </project>
 </coverage>
